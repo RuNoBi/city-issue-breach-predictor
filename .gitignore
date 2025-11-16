@@ -1,18 +1,20 @@
 # ----------------
-# DATA FILES (ignore raw + processed)
+# Ignore ALL csv files everywhere (big data not allowed)
 # ----------------
+*.csv
+!data_samples/*.csv   # allow sample CSVs
 
-# Raw data (ใหญ่เกิน GitHub)
+# ----------------
+# Raw data (600k rows, should not upload)
+# ----------------
 data/raw/*
-data/raw/**/*.csv
 bangkok_traffy.csv
 
+# ----------------
 # Processed data (150k / 200k / final_for_viz)
-data/processed/*.csv
+# ----------------
+data/processed/*
 data/processed/**/*.csv
-
-# อย่า push ไฟล์ใหญ่ เช่น 150k rows, 600k rows
-*.csv
 
 # ----------------
 # JUPYTER
@@ -27,12 +29,6 @@ __pycache__/
 *.pyc
 
 # ----------------
-# ENV / SECRETS
-# ----------------
-.env
-*.env
-
-# ----------------
 # SYSTEM FILES
 # ----------------
 .DS_Store
@@ -41,4 +37,3 @@ __pycache__/
 # EDITOR SETTINGS
 # ----------------
 .vscode/
-.idea/
