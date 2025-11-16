@@ -1,20 +1,14 @@
 # ----------------
-# Ignore ALL csv files everywhere (big data not allowed)
+# DATA FILES
 # ----------------
-*.csv
-!data_samples/*.csv   # allow sample CSVs
 
-# ----------------
-# Raw data (600k rows, should not upload)
-# ----------------
-data/raw/*
-bangkok_traffy.csv
+# raw big data (ไม่ต้องขึ้น GitHub)
+data/bangkok_traffy.csv
+data/raw/
+data/processed/
 
-# ----------------
-# Processed data (150k / 200k / final_for_viz)
-# ----------------
-data/processed/*
-data/processed/**/*.csv
+# sample data (data_samples/) — ให้ขึ้น GitHub ได้ตามปกติ
+# ไม่ต้อง ignore อะไรเลยในโฟลเดอร์นี้
 
 # ----------------
 # JUPYTER
