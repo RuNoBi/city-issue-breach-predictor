@@ -3,9 +3,7 @@
 # ----------------
 
 # raw big data (ไม่ต้องขึ้น GitHub)
-data/bangkok_traffy.csv
-data/raw/
-data/processed/
+data/
 
 # sample data (data_samples/) — ให้ขึ้น GitHub ได้ตามปกติ
 # ไม่ต้อง ignore อะไรเลยในโฟลเดอร์นี้
